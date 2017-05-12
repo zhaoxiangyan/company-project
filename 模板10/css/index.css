@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+/*ol{list-style-type:none;counter-reset:sectioncounter;}  
+ol li:before {  
+    content:counter(sectioncounter) "、";   
+    counter-increment:sectioncounter;  
+ }  */
+a{
+	text-decoration: none;
+	
+}
+img{
+	border:0 none;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clearfix:before,.clearfix:after{
+	content:"";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+	overflow:hidden;
+}
+.clearfix{
+	*zoom:1;
+}
+html {font-family: "微软雅黑";}
+
+body {
+	width: 100%;
+	min-width: 1130px;
+	background:#fff;
+}
+/*头部标题logo栏*/
+header {
+	width: 100%;
+	height: 80px;
+	border-bottom:8px solid #ffc600;
+	background:#ffffff;
+}
+.header {
+	height: 80px;
+	width: 950px;
+	margin:0 auto;
+}
+.header img {
+	margin: 16px 0 0 15px;
+}
+.header ul {
+	float: right;
+	height: 100%;
+}
+.header ul li {
+	float: left;
+	line-height: 80px;
+	margin: 0 19px;
+	font-size: 15px;
+}
+.header ul li.active a {
+	color: #DB4713;
+}
+.header ul li a {
+	color: #000000;
+}
+.header ul li a:hover {
+	color: #db4713;
+}
+/*横幅大图*/
+.banner{
+	width:100%;
+	height:418px;
+}
+.banner div{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left:240px;
+	height:418px;
+	width:945px;
+	margin:0 auto;
+	background:url(../img/header_bg.png) no-repeat center;
+	/*background-size:center;*/
+	text-align: center;
+}
+.banner div h3{
+	padding-top:100px;
+	color:#b91832;
+	font-size:50px;
+	letter-spacing: 4px;
+}
+.banner div p{
+	color:#595959;
+	font-size:18px;	
+	font-weight:bold;
+	letter-spacing: 2px;
+	margin-bottom:10px;
+}
+.banner div a{
+	display:inline-block;
+	background:url(../img/btn_bg.png) no-repeat;
+	color:#ffffff;
+	width:299px;
+	height:63px;
+	line-height:54px;
+	font-size:27px;
+	font-weight:bold;
+	border-radius:6px;
+	letter-spacing: 3px;
+}
+/*活动内容*/
+#main{
+	width:100%;
+	height:auto;
+	margin-bottom:24px;
+}
+.main{
+	width:950px;
+	margin:0 auto;
+}
+.main .box{
+	width:100%;
+	height:;
+	margin-top:24px;
+}
+.main .activity{
+	width:48%;
+}
+.main .clearboth{
+	clear:both;
+}
+.main .box .title{
+	width:100%;
+	font-size:22px;
+	font-weight:bold;
+	background:#ffc600;
+	color:#ffffff;
+	height:37px;
+	line-height:37px;
+	border-top-right-radius:20px 20px;
+	margin-bottom:7px;
+	text-indent:8px;
+	letter-spacing: 2px;
+}
+.main .box .content{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:100%;
+	border:1px solid #FFC600;
+	background:#fff9e5;
+	padding:17px 40px;
+	border-top-right-radius:20px 20px;
+	font-size:13px;
+	color:#444444;
+	line-height:18px;
+}
+.leader-detail .left{
+	float:left;
+	width:19%;
+	text-align: center;
+	font-size:14px;
+}
+.leader-detail .left img{
+	width:100%;
+	height:207px;
+}
+.leader-detail .right{
+	float:right;
+	width:78%;
+}
+.leader-detail .right i,.leader-detail .right em{
+	display:block;
+	font-style:normal;
+}
+.leader-detail .right i{
+	font-weight: bold;
+	margin-top:22px;
+}
+.activity .content{
+	/*text-align: center;*/
+}
+.activity table{
+	margin:0 auto;
+	text-align: center;
+}
+.activity table th{
+	font-weight: normal;
+}
+.activity h5{
+	margin-top:20px;
+}
+.activity ol li{
+	list-style:decimal;
+	list-style-position:inside;
+}
+.lecturer .content{
+	display:flex;
+	display:box;
+	display:flexbox;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+}
+.lecturer .content div{
+	flex:1;
+	-moz-box-flex:1;
+	-webkit-box-flex:1;
+	text-align: center;
+	display:inline-block\9;
+	width:33%\9;
+}
+.lecturer .content div img{
+	width:142px;
+	height:190px;
+}
+.lecturer .content div b{
+	display:block;
+}
+.lecturer .content div em{
+	
+}
+footer{
+	width:100%;
+	background:#FFC600;
+	color:#ffffff;
+}
+footer .footer{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:1130px;
+	margin:0 auto;
+	padding:100px 0px 50px;
+	text-align:center;
+}
+.footer ul{
+	margin:0 auto;
+	display:inline-block;
+}
+.footer ul li{
+	float:left;
+	display:inline-block;
+	width:430px;	
+}
+.footer ul li p{
+	font-size:13px;
+	/*color:#6e6f7a;*/
+    line-height: 30px;
+    margin:30px 3px;
+}
+.footer div{
+	padding:0 40px;
+}
+.footer div p{
+	font-size:14px;
+	/*color:#70717c;*/
+	margin-bottom:20px;
+}
