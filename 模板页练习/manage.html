@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网页内容管理</title>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+	</head>
+	<body>
+		
+  <label>ID:</label><input id="testText1" type="text" />
+  <label>Name:</label><input id="testText2" type="text" />
+	</body>
+	<script type="text/javascript">
+		function funSave() {
+var id = $('#testText1')[0].value;
+var name = $('#testText2')[0].value;
+var str = '{mydata:[' + '{id:' + id + ',name:' + name + '}' + ']}';
+ 
+str = "{MyData:[{id:'" + id + "',name:'" + name + "'}]}";
+ 
+//var json = eval('(' + str + ')');
+ 
+var fso, tf;
+try{
+fso = new ActiveXObject("Scripting.FileSystemObject");
+      tf = fso.CreateTextFile("js/txt.json", true);
+      tf.WriteLine(str);
+}catch(err){
+ 
+ 
+      }finally{
+      tf.Close();
+      }
+}
+ 
+function funSearch() {
+var fso, ts, s;
+var ForReading = 1;
+try{
+fso = new ActiveXObject("Scripting.FileSystemObject");
+      ts = fso.OpenTextFile("js/txt.json", ForReading);
+      s = ts.ReadLine();
+      var json = eval('(' + s + ')');
+      alert(json.MyData[0].id);
+}catch(err){
+ 
+ 
+}finally{
+ts.Close();
+}
+}
+	</script>
+</html>
