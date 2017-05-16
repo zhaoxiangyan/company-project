@@ -1,0 +1,608 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+ol{list-style-type:none;counter-reset:sectioncounter;}  
+ol li:before {  
+    content:counter(sectioncounter) "、";   
+    counter-increment:sectioncounter;  
+ }  
+a{
+	text-decoration: none;
+}
+html {font-family: "微软雅黑";}
+
+body {
+	width: 100%;
+	min-width: 1260px;
+	background:#fff;
+}
+/*头部标题logo栏*/
+header {
+	width: 100%;
+	height: 800px;
+	background:url(../img/header_bg.gif) no-repeat;
+	background-size:100% 100%;
+	overflow: hidden;
+}
+
+.header1 {
+	height: 8px;
+	width: 100%;
+	background:#db4713;
+}
+
+.header2 {
+	height: 80px;
+	width: 100%;
+	background:#161734;
+}
+
+.header2 div{
+	margin:0 auto;
+	width:1260px;
+	height:100%;
+}
+.header2 div img {
+	margin: 16px 0 0 15px;
+}
+
+.header2 div ul {
+	float: right;
+	height: 100%;
+}
+
+.header2 div ul li {
+	float: left;
+	line-height: 80px;
+	margin: 0 19px;
+	font-size: 15px;
+}
+
+.header2 div ul li.active a {
+	color: #DB4713;
+}
+
+.header2 div ul li a {
+	color: #fefefe;
+}
+
+.header2 div ul li a:hover {
+	color: #db4713;
+}
+.header3 {
+	height: 632px;
+	width: 100%;
+}
+.header3 div{
+	margin:0 auto;
+	width:1260px;
+	height:100%;
+}
+.header3 div p{
+	height:250px;
+	line-height:250px;
+	font-size:110px;
+	color:#161734;
+	text-align: center;
+	font-family: arial;
+	font-weight:bold;
+}
+.header3 div p i{
+     position:relative;
+     top:-10px; 
+	margin-left:20px;
+	font-size:88px;
+	font-family: "微软雅黑";
+	font-style: normal;
+}
+.header3 div div{
+	width:100%;
+	height:382px;
+	text-align: center;
+}
+.header3 div div span{
+	text-align: center;
+	position:relative;
+	display:inline-block;
+	width:295px;
+	height:295px;
+	color:#1e2a43;
+	border-radius:295px;
+	background-color:rgba(245,243,243,0.53);
+	
+}
+.header3 div div span.left{
+	right:960px;
+}
+.header3 div div span.right{
+	left:960px;
+}
+.header3 div div span p{
+	font-size:60px;
+	line-height:295px;
+	height:295px;
+}
+.header3 div div span em{
+	position:absolute;
+	font-style: normal;
+	bottom:85px;
+	right:100px;
+	font-size:16px;
+}
+.header4 {
+	height: 80px;
+	width: 100%;
+	background:#c85227;
+	opacity: 0.871;
+}
+.header4 div{
+	margin:0 auto;
+	width:1260px;
+	height:100%;
+	text-align: center;
+}
+.header4 div a{
+	margin-top:14px;
+	display:inline-block;
+	width:175px;
+	height:50px;
+	border:1px solid #ffffff;
+	line-height:50px;
+	text-align: center;
+	color:#fff;
+	background:#c85227;
+	border-radius: 5px;
+	font-size:23px;
+}
+.header4 div a:hover{
+	border:1px solid #ECC4B6;
+	color:#c85227;
+	background:#ecc4b6;
+}
+
+/*什么是外汇content1*/
+.content1{
+	height:580px;
+	width:100%;
+	background:url(../img/content1_bg.gif) repeat 100% 100%;
+}
+.content1 div{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin:0 auto;
+	padding:20px 65px 0;
+	width:1260px;
+	height:100%;
+	background:url(../img/earth_bg.gif) no-repeat 100% 100%;
+	color:#444444;
+	text-align:center;
+	
+}
+.content1 div h3{
+	font-size:50px;
+	line-height:170px;
+}
+.content1 div p{
+	font-size:17px;
+    font-weight: 600;
+	line-height:30px;
+	text-align: left;
+}
+/*外汇交易的优势content2*/
+.content2{
+	height:710px;
+	width:100%;
+	background:#f4f5f7;
+}
+.content2 div{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin:0 auto;
+	padding:70px 65px 0;
+	width:1260px;
+	height:100%;
+	color:#444444;
+	text-align:center;
+}
+.content2 div h3{
+	font-size:50px;
+	line-height:150px;
+}
+.content2 div ol li{
+	text-align: left;
+	font-weight:600;
+    font-size: 16px;
+    line-height: 30px;
+}
+.content2 div span{
+	display:block;
+	width:100%;
+	height:134px;
+	margin:80px 0;
+	background:url(../img/content2_bg.png) no-repeat;
+}
+/*进入外汇行业怎么赚钱content3*/
+.content3{
+	width:100%;
+	background:#fff;
+}
+.content3 div{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin:0 auto;
+	padding:40px 65px 0;
+	width:1260px;
+	height:100%;
+	color:#444444;
+	text-align:center;
+}
+.content3 div h3{
+	font-size:50px;
+	line-height:150px;
+}
+.content3 div img{
+	
+}
+.content3 div p{
+  font-size: 16px;
+  font-weight:600;
+  line-height:30px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom:45px;
+}
+/*0基础也能赚取佣金content4*/
+.content4{
+	width:100%;
+	height:700px;
+	background:url(../img/content4_bg.png) repeat-x;
+}
+.content4 div{
+	margin:0 auto;
+	width:1260px;
+    height:100%;
+    color:#444444;
+    position:relative;
+}
+.content4 div:before{    
+                  content: "";    
+                  display: table;    
+              } 
+.content4 div h3{
+  margin-top:70px;	
+  font-size: 50px;
+  font-weight: bold;
+  line-height:140px;
+  text-align: center;
+}
+.content4 div ol li{
+	padding:0 335px;
+	font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+}
+.content4 div img{
+	position:absolute;
+	bottom:-22px;
+}
+/*GQFX双金融牌照content5*/
+.content5{
+	width:100%;
+}
+.content5 div{
+	width:1260px;
+	text-align: center;
+	color:#444444;
+	margin:0 auto;
+	padding-bottom:75px;
+}
+.content5 div h3{
+	font-size:50px;
+	font-weight:bold;
+	line-height:260px;
+}
+.content5 div ul{
+	display:inline-block;
+}
+.content5 div ul li{
+	float:left;
+}
+.content5 div ul li.FSP{
+	margin-right:135px;
+}
+.content5 div ul li.FSP img{
+	margin:10px 0 9px;
+}
+.content5 div ul li p{
+  margin-top:30px;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight:bold;
+}
+/*GQFX客户资金安全content6*/
+.content6{
+	width:100%;
+	background:#F4F5F7;
+}
+.content6 div{
+	width:1260px;
+	text-align:center;
+	color:#444444;
+	margin:0 auto;
+	padding-bottom:60px;
+}
+.content6 div h3{
+	font-size:50px;
+	font-weight:bold;
+	line-height:280px;
+}
+.content6 span{
+	display:inline-block;
+}
+.content6 span img.ANZ{
+	margin:0 70px;
+}
+.content6 div p{
+  font-size: 16px;
+  font-weight:bold;
+  line-height: 96px;
+}
+/*GQFX优惠政策content7*/
+.content7{
+	width:100%;
+}
+.content7 div{
+	width:1260px;
+	text-align:center;
+	color:#444444;
+	margin:0 auto;
+}
+.content7 div h3{
+	font-size:50px;
+	font-weight:bold;
+	line-height:200px;
+}
+.content7 div ul{
+	display:inline-block;
+	border:2px solid #d3d3d5;
+}
+.content7 div ul li{
+	float:left;
+}
+.content7 div ul li a{
+	display:inline-block;
+}
+.content7 div ul li div{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:280px;
+	height:194px;
+	font-size:14px;
+	padding:15px 0 0; 
+}
+.content7 div ul li div b,.content7 div ul li div em{
+	display:block;
+}
+.content7 div ul li div b{
+	font-size:22px;
+	line-height:36px;
+}
+.content7 div ul li div em{
+	font-style: normal;
+	color:#db4713;
+	font-weight:bold;
+	line-height:18px;
+}
+.content7 div ul li div i{
+	width:30px;
+	height:2px;
+	display:block;
+	overflow: hidden;
+}
+.content7 div ul li.reward1 div{
+	background:#ebf2f5;
+}
+.content7 div ul li.reward2 div{
+	background:#f6f2f3;
+}
+.content7 div ul li.reward3 div{
+	background:#f5f2ed;
+}
+.content7 div ul li.reward4 div{
+	background:#f0f4ed;
+}
+.reward1 div i{
+	background:#32b0d9;
+	margin:22px auto;
+}
+.reward2 div i{
+	background:#f76d87;
+	margin:22px auto;
+}
+.reward3 div i{
+	background:#ff9000;
+	margin:15px auto;
+}
+.reward4 div i{
+	background:#7dc11c;
+	margin:10px auto;
+}
+.content7 div ul li img{
+	vertical-align: bottom;
+}
+.content7 div ul+p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 96px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+/*GQFX直播平台content8*/
+.content8{
+	width:100%;
+	background:#f4f5f7;
+}
+.content8 div{
+	width:1260px;
+	margin:0 auto;
+	text-align: center;
+	padding:55px 0 110px;
+}
+.content8 div h3{
+  font-size: 50px;
+  font-weight: bold;
+  line-height:150px;
+}
+.content8 div p{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.875;	
+}
+
+/*GQFX交易平台content9*/
+.content9{
+	width:100%;
+}
+.content9 div{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:1260px;
+	margin:0 auto;
+	padding:45px 65px 120px;
+	text-align: center;
+	color:#444444;
+}
+.content9 div h3{
+  font-size: 50px;
+  font-weight: bold;
+  line-height:130px;
+}
+.content9 div p{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.875;	
+}
+
+footer{
+	width:100%;
+	background:#23242f;
+}
+footer .footer{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:1260px;
+	margin:0 auto;
+	padding:150px 65px 100px;
+	text-align:center;
+}
+.footer ul{
+	margin:0 auto;
+	display:inline-block;
+}
+.footer ul li{
+	float:left;
+	display:inline-block;
+	width:430px;	
+}
+.footer ul li p{
+	font-size:12px;
+	color:#6e6f7a;
+    line-height: 30px;
+    margin:30px 3px;
+}
+.footer .telephone{
+	display:inline-block;
+	font-family: sans-serif;
+	color:#fff;
+	font-size:16px;
+	line-height:20px;
+	text-indent: 26px;
+	background:url(../img/telephone_icon.png) no-repeat 0 2px;
+	margin-bottom:30px;
+}
+.footer .telephone:hover{
+	text-decoration: underline;
+}
+.footer div p{
+	font-size:14px;
+	color:#70717c;
+	margin-bottom:20px;
+}
+/*固定小窗口*/
+.fixed_left,.fixed_right{
+	width:160px;
+	height:240px;
+	border-radius: 10px;
+	position:fixed;
+	top:50%;
+	cursor: auto;
+	margin-top:-120px;
+	text-align: center;
+	color:#ffffff;
+}
+.fixed_left{
+	background:#4b7ac1;
+	left:0;
+}
+.fixed_left h5{
+  font-size: 30px;
+  font-weight: bold; 
+  line-height: 50px;
+}
+.fixed_left p{
+  font-size: 16px;
+  line-height: 1.286;
+  padding:0 14px;
+}
+.fixed_left a{
+  position:absolute;
+  display:inline-block;
+  top:0;
+  right:6px;
+  color: #d4cbcb;
+  font-size: 15px;
+  text-decoration: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.fixed_right{
+	background:url(../img/fixed_right_bg.png) no-repeat;
+	right:0;
+}
+.fixed_right h5{
+	margin-top:70px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+}
+.fixed_right .button{
+	position:absolute;
+	width:127px;
+	height:32px;
+	display:inline-block;
+	bottom:31px;
+	right:18px;
+}
+.fixed_right .close{
+  position:absolute;
+  width:8px;
+  height:20px;
+  display:inline-block;
+  top:0;
+  right:6px;
+  color: #d4cbcb;
+  font-size: 15px;
+  opacity: 0;
+  cursor: pointer;
+}
