@@ -18,6 +18,9 @@ ol li:before {
 a{
 	text-decoration: none;
 }
+img{
+	border: none;
+}
 html {font-family: "微软雅黑";}
 
 body {
