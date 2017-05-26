@@ -1,0 +1,790 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+ol{list-style-type:none;counter-reset:sectioncounter;}  
+ol li:before {  
+    content:counter(sectioncounter) "、";   
+    counter-increment:sectioncounter;  
+ }  
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+.clearfix:before, .clearfix:after {   
+    content:"";   
+    display:table;   
+}   
+.clearfix:after{   
+    clear:both;   
+    overflow:hidden;   
+}   
+.clearfix{   
+    *zoom:1;   
+}  
+html {font-family: "微软雅黑";}
+
+body {
+	width: 100%;
+	min-width: 1260px;
+	background:#fff;
+}
+/*头部标题logo栏*/
+header {
+	width: 100%;
+	height: 800px;
+	background: url(../img/header_bg.png) no-repeat center;
+	overflow: hidden;
+}
+.header1 {
+	height: 8px;
+	width: 100%;
+	background:#db4713;
+}
+
+.header2 {
+	height: 80px;
+	width: 100%;
+	background:#161734;
+}
+
+.header2 div{
+	margin:0 auto;
+	width:1260px;
+	height:100%;
+}
+.header2 div img {
+	margin: 16px 0 0 15px;
+}
+
+.header2 div ul {
+	float: right;
+	height: 100%;
+}
+
+.header2 div ul li {
+	float: left;
+	line-height: 80px;
+	margin: 0 19px;
+	font-size: 15px;
+}
+
+.header2 div ul li.active a {
+	color: #DB4713;
+}
+
+.header2 div ul li a {
+	color: #fefefe;
+}
+
+.header2 div ul li a:hover {
+	color: #db4713;
+}
+.header3 {
+	height: 632px;
+	width: 100%;
+}
+.header3 div{
+	margin:0 auto;
+	width:1260px;
+	height:100%;
+}
+/*.header3 div p{
+	height:150px;
+	line-height:150px;
+	font-size:110px;
+	color:#161734;
+	text-align: center;
+	font-family: arial;
+	font-weight:bold;
+	padding-top:155px;
+}*/
+.header3 div p{
+	/*height:150px;*/
+	line-height:130px;
+	font-size:100px;
+	color:#161734;
+	text-align: center;
+	font-family: arial;
+	font-weight:bold;
+	padding:155px 400px 0;
+	letter-spacing:5px;
+}
+.header3 div p i{
+     position:relative;
+     top:-10px; 
+	margin-left:20px;
+	font-size:88px;
+	font-family: "微软雅黑";
+	font-style: normal;
+}
+.header3 div span{
+  font-size: 36px;
+  color: #1e2a43;
+  display: block;
+  text-align: center;
+  /*font-weight:bold;*/
+  letter-spacing: 6px;
+  text-shadow:0px 0px 35px #fff;
+}
+.header4 {
+	height: 80px;
+	width: 100%;
+	background:#c85227;
+	opacity: 0.871;
+}
+/*什么是外汇content1*/
+.content1{
+	height:580px;
+	width:100%;
+	background:url(../img/content1_bg.gif) repeat 100% 100%;
+}
+.content1 div{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin:0 auto;
+	padding:20px 65px 0;
+	width:1260px;
+	height:100%;
+	background:url(../img/earth_bg.gif) no-repeat 100% 100%;
+	color:#444444;
+	text-align:center;
+	
+}
+.content1 div h3{
+	font-size:50px;
+	line-height:170px;
+}
+.content1 div p{
+	font-size:17px;
+    font-weight: 600;
+	line-height:30px;
+	text-align: left;
+}
+/*外汇交易的优势content2*/
+.content2{
+	height:710px;
+	width:100%;
+	background:#f4f5f7;
+}
+.content2 div{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin:0 auto;
+	padding:70px 65px 0;
+	width:1260px;
+	height:100%;
+	color:#444444;
+	text-align:center;
+}
+.content2 div h3{
+	font-size:50px;
+	line-height:150px;
+}
+.content2 div ol li{
+	text-align: left;
+	font-weight:600;
+    font-size: 16px;
+    line-height: 30px;
+}
+.content2 div span{
+	display:block;
+	width:100%;
+	height:135px;
+	margin:80px 0;
+	background:url(../img/content2_bg.png) no-repeat;
+}
+/*进入外汇行业怎么赚钱content3*/
+.content3{
+	width:100%;
+	background:#fff;
+}
+.content3 div{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin:0 auto;
+	padding:40px 65px 0;
+	width:1260px;
+	height:100%;
+	color:#444444;
+	text-align:center;
+}
+.content3 div h3{
+	font-size:50px;
+	line-height:150px;
+}
+.content3 div img{
+	
+}
+.content3 div p{
+  font-size: 16px;
+  font-weight:600;
+  line-height:30px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom:45px;
+}
+/*0基础也能赚取佣金content4*/
+.content4{
+	width:100%;
+	height:700px;
+	background:url(../img/content4_bg.png) repeat-x;
+}
+.content4 div{
+	margin:0 auto;
+	width:1260px;
+    height:100%;
+    color:#444444;
+    position:relative;
+}
+.content4 div:before{    
+                  content: "";    
+                  display: table;    
+              } 
+.content4 div h3{
+  margin-top:70px;	
+  font-size: 50px;
+  font-weight: bold;
+  line-height:140px;
+  text-align: center;
+}
+.content4 div ol li{
+	padding:0 335px;
+	font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+}
+.content4 div img{
+	position:absolute;
+	bottom:-22px;
+}
+/*GQFX双金融牌照content5*/
+.content5{
+	width:100%;
+}
+.content5 div{
+	width:1260px;
+	text-align: center;
+	color:#444444;
+	margin:0 auto;
+	padding-bottom:75px;
+}
+.content5 div h3{
+	font-size:50px;
+	font-weight:bold;
+	line-height:260px;
+}
+.content5 div ul{
+	display:inline-block;
+}
+.content5 div ul li{
+	float:left;
+}
+.content5 div ul li.FSP{
+	margin-left:45px;
+}
+.content5 div ul li.FSP img{
+	margin:21px 0 25px;
+}
+.content5 div ul li.IFSC{
+    margin-left:140px;
+}
+.content5 div ul li p{
+  margin-top:30px;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight:bold;
+  letter-spacing: 1px;
+}
+/*GQFX客户资金安全content6*/
+.content6{
+	width:100%;
+	background:#F4F5F7;
+}
+.content6 div{
+	width:1260px;
+	text-align:center;
+	color:#444444;
+	margin:0 auto;
+	padding-bottom:60px;
+}
+.content6 div h3{
+	font-size:50px;
+	font-weight:bold;
+	line-height:280px;
+}
+.content6 span{
+	display:inline-block;
+}
+.content6 span img.ANZ{
+	margin:0 70px;
+}
+.content6 div p{
+  font-size: 16px;
+  font-weight:bold;
+  line-height: 96px;
+}
+/*GQFX优惠政策content7*/
+.content7{
+	width:100%;
+}
+.content7 div{
+	width:1260px;
+	text-align:center;
+	color:#444444;
+	margin:0 auto;
+}
+.content7 div h3{
+	font-size:50px;
+	font-weight:bold;
+	line-height:200px;
+}
+.content7 div ul{
+	display:inline-block;
+	border:2px solid #d3d3d5;
+}
+.content7 div ul li{
+	float:left;
+}
+.content7 div ul li a{
+	display:inline-block;
+}
+.content7 div ul li div{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:280px;
+	height:194px;
+	font-size:14px;
+	padding:15px 0 0; 
+}
+.content7 div ul li div b,.content7 div ul li div em{
+	display:block;
+}
+.content7 div ul li div b{
+	font-size:22px;
+	line-height:36px;
+}
+.content7 div ul li div em{
+	font-style: normal;
+	color:#db4713;
+	font-weight:bold;
+	line-height:18px;
+}
+.content7 div ul li div i{
+	width:30px;
+	height:2px;
+	display:block;
+	overflow: hidden;
+}
+.content7 div ul li.reward1 div{
+	background:#ebf2f5;
+}
+.content7 div ul li.reward2 div{
+	background:#f6f2f3;
+}
+.content7 div ul li.reward3 div{
+	background:#f5f2ed;
+}
+.content7 div ul li.reward4 div{
+	background:#f0f4ed;
+}
+.reward1 div i{
+	background:#32b0d9;
+	margin:22px auto;
+}
+.reward2 div i{
+	background:#f76d87;
+	margin:22px auto;
+}
+.reward3 div i{
+	background:#ff9000;
+	margin:15px auto;
+}
+.reward4 div i{
+	background:#7dc11c;
+	margin:10px auto;
+}
+.content7 div ul li img{
+	vertical-align: bottom;
+}
+.content7 div ul+p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 96px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+/*GQFX直播平台content8*/
+.content8{
+	width:100%;
+	background:#f4f5f7;
+}
+.content8 div{
+	width:1260px;
+	margin:0 auto;
+	text-align: center;
+	padding:55px 0 110px;
+}
+.content8 div h3{
+  font-size: 50px;
+  font-weight: bold;
+  line-height:150px;
+}
+.content8 div p{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.875;	
+}
+
+/*GQFX交易平台content9*/
+.content9{
+	width:100%;
+}
+.content9 div{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:1260px;
+	margin:0 auto;
+	padding:45px 65px 80px;
+	text-align: center;
+	color:#444444;
+}
+.content9 div h3{
+  font-size: 50px;
+  font-weight: bold;
+  line-height:130px;
+}
+.content9 div p{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.875;	
+}
+.content10{
+   background:#f4f5f7;
+   text-align: center;
+}
+.content10 h3{
+   font-size:50px;
+   font-weight:bold;
+   line-height:1.875;
+   padding:60px 0;
+   color:#444444;
+}
+.content10 div ul{
+	margin:0 auto;
+	display:inline-block;
+}
+.content10 div ul li:first-child{
+	margin-right:170px;
+}
+.content10 div ul li{
+	float:left;
+	display:inline-block;
+	width:300px;	
+}
+.content10 div ul li img{
+	width:300px;
+}
+.content10 div ul li p{
+	font-size:12px;
+	color:#6e6f7a;
+    line-height: 26px;
+    margin:20px 3px;
+}
+footer{
+	width:100%;
+	background:#23242f;
+}
+footer .footer{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:1260px;
+	margin:0 auto;
+	padding:90px 65px 100px;
+	text-align:center;
+}
+.footer div img{
+	margin-bottom:30px;
+}
+.footer div p{
+	font-size:14px;
+	color:#70717c;
+	margin-bottom:20px;
+}
+/*发送邮件弹窗*/
+.email_bg{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background:rgba(0,0,0,.6);
+  z-index: 999;
+  display: none;
+}
+.email_box{
+  position:absolute;
+  z-index:1;
+  width:710px;
+  height:auto;
+  top:20%;
+  left:50%;
+  margin-left:-355px;
+  font-family: Arial;
+}
+.mailto{
+  text-align:center;
+  padding:0 10px;
+  margin:20px 0;
+}
+.mailto a{
+    font-weight: bold;
+    font-size: 14px;
+    color: #cccccc;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #222222;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+.email_content{
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    min-height: 100px;
+    background: #ffffff;
+}
+.email_content .top{
+    padding: 23px 30px 0;
+    color: #444444;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+}
+.top strong{
+	font-weight: normal;
+    font-size: 20px;
+    float: left;
+}
+.top a{
+	float: right;
+    text-decoration: none;
+    color: #777777;
+    font-size: 12px;
+}
+.top a:hover{
+	text-decoration: underline;
+}
+.email_content .main{
+	padding: 15px 30px 30px;
+}
+.email_content .main label{
+	display: block;
+    color: #555555;
+    margin: 0 0 8px;
+    font-size: 14px;
+    -webkit-transition: color .6s;
+    -moz-transition: color .6s;
+    -o-transition: color .6s;
+    -ms-transition: color .6s;
+    transition: color .6s;
+}
+.main input,.main textarea{
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    padding: 10px 12px;
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.3;
+    font-size: 13px;
+    border: 1px solid #aaaaaa;
+    box-shadow: inset 1px 1px 2px #eaeaea;
+    -webkit-box-shadow: inset 1px 1px 2px #eaeaea;
+    -moz-box-shadow: inset 1px 1px 2px #eaeaea;
+    resize: none;
+    background: #fcfcfc;
+    position: relative;
+    z-index: 9;
+}
+.main input{
+	display: block;
+    margin: 0 0 10px;
+    outline: none;
+    width: 74%;
+}
+.main .subject{
+
+}
+.main .message{}
+.main .message textarea{
+	display:block;
+	width:98%;
+	height:170px;
+	outline:none;
+}
+.main .actions{
+	margin:10px 0 0;
+	/*display:table;*/
+	width:100%;
+	/*display:flex;*/
+}
+.main .actions .td{
+	/*flex: 1;*/
+	display:inline-block;
+	width:33%;
+	padding:0;
+	padding-right:10px;
+	vertical-align: bottom;
+}
+.td input{
+	width:100%;
+	margin:0;
+}
+.actions .name{}
+.actions .email{}
+.actions .telephone{}
+.actions .region{}
+.actions .submit_box{}
+.submit_box a{
+	display:inline-block;
+	border:1px solid red;
+
+}
+/*固定小窗口*/
+.fixed_left,.fixed_right{
+	width:160px;
+	height:240px;
+	border-radius: 10px;
+	position:fixed;
+	top:50%;
+	cursor: auto;
+	margin-top:-120px;
+	text-align: center;
+	color:#ffffff;
+}
+.fixed_left{
+	background:#4b7ac1;
+	left:0;
+}
+.fixed_left h5{
+  font-size: 30px;
+  font-weight: bold; 
+  line-height: 50px;
+}
+.fixed_left p{
+  font-size: 16px;
+  line-height: 1.286;
+  padding:0 14px;
+}
+.fixed_left a{
+  position:absolute;
+  display:inline-block;
+  top:0;
+  right:6px;
+  color: #d4cbcb;
+  font-size: 15px;
+  text-decoration: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.fixed_right{
+	background:url(../img/fixed_right_bg.png) no-repeat;
+	right:0;
+}
+.fixed_right h5{
+	margin-top:70px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+}
+.fixed_right .button{
+	position:absolute;
+	width:127px;
+	height:32px;
+	display:inline-block;
+	bottom:31px;
+	right:18px;
+}
+.fixed_right .close{
+  position:absolute;
+  width:8px;
+  height:20px;
+  display:inline-block;
+  top:0;
+  right:6px;
+  color: #d4cbcb;
+  font-size: 15px;
+  opacity: 0;
+  cursor: pointer;
+}
+.fixed_bottom{
+	display:none;
+    position: fixed;
+    bottom: 0;
+    background:rgba(179,179,179,0.9);
+    width: 100%;
+    /*height:43px;*/
+    border-top:10px solid #212121;
+}
+.fixed_bottom div{
+	width:1260px;
+	/*height:100%;*/
+	margin:0 auto;
+	position:relative;
+	color:#23242f;
+	text-align:center;
+}
+.fixed_bottom div p{
+	text-align: center;
+	line-height:43px;
+}
+.fixed_bottom div a{
+   display:inline-block;
+   line-height:43px;
+   position:absolute;
+   bottom:0;
+   right:10%;
+   background:url(../img/email_icon.png) no-repeat 5px;
+   text-indent:31px;
+   color:#23242f;
+}
+.fixed_bottom div a:hover{
+	color:#000;
+	text-decoration: underline;
+}
+@media(max-width:1260px){
+	.fixed_bottom div{
+		width:100%;
+	}
+}
+@media(max-width:500px){
+	 .fixed_bottom div a{
+	 	position:static;
+	 }
+}
